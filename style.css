@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.notifications {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px 30px 10px;
+  border-radius: 15px;
+  width: 720px;
+  margin-bottom: 30px;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.notifications-count {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 800;
+  gap: 15px;
+  color: hsl(224, 21%, 14%);
+}
+
+.notifications-count span {
+  text-align: center;
+  margin: auto;
+  width: 28px;
+  height: 22px;
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 5px;
+}
+
+.count {
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.mark-as-read {
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+
+.mark-as-read:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification {
+  color: hsl(219, 12%, 42%);
+  display: flex;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.new {
+  cursor: pointer;
+}
+
+img {
+  width: 46px;
+  max-height: 45px;
+  margin-right: 18px;
+}
+
+.info {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
+
+a:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.private-message {
+  padding: 15px 20px;
+  border: 1px solid hsl(211, 68%, 94%);
+  border-radius: 6px;
+  width: 565px;
+  margin-top: 12px;
+}
+
+.private-message:hover {
+  background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+
+.user-activity {
+  color: hsl(219, 12%, 42%);
+}
+
+.circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.notification-time {
+  color: hsl(219, 14%, 63%);
+}
+
+.new {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media(max-width: 740px) {
+  .notifications {
+    width: 500px;
+  }
+
+  .private-message {
+    width: 300px;
+  }
+}
+
+@media(max-width: 525px) {
+  .notifications-header {
+    flex-direction: column;
+  }
+
+  .notifications-count {
+    margin-bottom: 10px;
+  }
+
+  .notifications-count span {
+    margin-left: 5px;
+  }
+
+  .notifications {
+    width: 350px;
+  }
+
+  .private-message {
+    width: 180px;
+  }
+
+  .attribution {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 352px) {
+  .notifications {
+    width: 300px;
+  }
+}

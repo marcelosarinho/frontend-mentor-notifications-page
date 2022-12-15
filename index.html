@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="notifications">
+      <header class="notifications-header">
+        <div class="notifications-count">
+          Notifications
+          <span class="count">3</span>
+        </div>
+        <div class="mark-as-read">Mark all as read</div>
+      </header>
+      <main>
+        <div class="notification new">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="User photo" />
+          <div class="info">
+            <a class="user-profile" href="#">Mark Webber</a> reacted to your
+            recent post
+            <a class="user-activity" href="#">My first tournament today!</a><span class="circle"></span>
+            <div class="notification-time">1m ago</div>
+          </div>
+        </div>
+
+        <div class="notification new">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="User photo" />
+          <div class="info">
+            <a class="user-profile" href="#">Angela Gray</a> followed you<span class="circle"></span>
+            <div class="notification-time">5m ago</div>
+          </div>
+        </div>
+
+        <div class="notification new">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="User photo"
+          />
+          <div class="info">
+            <a class="user-profile" href="#">Jacob Thompson</a> has joined your
+            group <a class="user-activity" href="#">Chess Club</a><span class="circle"></span>
+            <div class="notification-time">1 day ago</div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="User photo"
+          />
+          <div class="info">
+            <a class="user-profile" href="#">Rizky Hasanuddin</a> sent you a
+            private message
+            <div class="notification-time">5 days ago</div>
+            <div class="private-message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="User photo"
+          />
+          <div class="info">
+            <a class="user-profile" href="#">Kimberly Smith</a> commented on
+            your picture
+            <div class="notification-time">1 week ago</div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="User photo"
+          />
+          <div class="info">
+            <a class="user-profile" href="#">Nathan Peterson</a> reacted to your
+            recent post
+            <a class="user-activity" href="#"
+              >5 end-game strategies to increase your win rate</a
+            >
+            <div class="notification-time">2 weeks ago</div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="User photo" />
+          <div class="info">
+            <a class="user-profile" href="#">Anna Kim</a> left the group
+            <a class="user-activity" href="#">Chess Club</a>
+            <div class="notification-time">2 weeks ago</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/marcelosarinho">Marcelo Sarinho</a>.
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
